@@ -67,7 +67,7 @@ def enemy(message):
         getid(message.text)
         pd[message.chat.id][0] = n
         global n
-        n = ""
+        n = " "
         bot.send_message(message.chat.id, "Thanks! Now I am ready to receive your word.\nThe format is:  \n/w your_word")
         if int(pd[message.chat.id][0]) in pd:
             if pd[int(pd[message.chat.id][0])][2] != "" and pd[int(pd[message.chat.id][0])][0] == str(message.chat.id):
